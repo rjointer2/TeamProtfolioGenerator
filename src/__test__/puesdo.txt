@@ -1,0 +1,7 @@
+
+
+for testlines
+
+a function that returns inquires value
+makes a class with inquires values
+make a ID by hashing

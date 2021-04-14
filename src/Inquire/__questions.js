@@ -1,5 +1,7 @@
 const inquirer = require('inquirer');
 
+// Question Array
+
 const questions = [
   {
     type: "input",
@@ -43,35 +45,4 @@ const questions = [
 ]
 
 
-const functions = {
-  createEmployee: (name, email) => {
-    class Employee {
-      constructor(name, email) {
-        this.name = name;
-        this.email = email;
-      }
-    
-    
-    }
-    
-    return new Employee(name, email)
-    
-  }
-}
-
-
-
-inquirer.prompt(
-  questions
-).then(
-  ({
-    name,
-    email
-  }) => {
-    functions.createEmployee(name, email)
-
-  }
-)
-
-
-module.exports = functions
+module.exports = questions;
